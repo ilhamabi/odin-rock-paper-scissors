@@ -9,3 +9,11 @@ function getComputerChoice() {
     console.log("Scissors");
   }
 }
+
+function getHumanChoice() {
+  let userInput = prompt("Masukkan pilihan anda");
+  console.log(userInput);
+}
+
+getComputerChoice();
+getHumanChoice();
