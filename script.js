@@ -47,3 +47,18 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
+function playGame(){
+  for(let i = 0; i < 5; i++){
+    playRound(getHumanChoice(), getComputerChoice()
+  )
+  }
+  if (humanScore > computerScore){
+    console.log("You Won,Computer Lose");
+  } else if (humanScore < computerScore){
+    console.log("You Lose, Computer Won");
+  } else {
+    console.log("Tie, Both have same score");
+  }
+}
+
+playGame();
